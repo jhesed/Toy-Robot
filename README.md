@@ -65,6 +65,8 @@ For more details, refer to [Problem Details](docs/md/problem_details.md)
     * Creation:
       * ```
         virtualenv venv
+        # or
+        python3.10 -m venv <env>
         ```
   * **Windows** (via _pycharm IDE_) [Guide](https://medium.com/@dev.jhesed/how-to-install-and-setup-pycharm-and-venv-in-windows-10-d4af56399b00)
 
@@ -161,7 +163,10 @@ Always code with tests in mind. Folder structure:
 ### Unit Tests
 * All `classes / methods / functions` should have their own unit tests.
 * Aim to test only the functionality of that specific functions and not the whole logic.
-
+* Example command:
+    ```
+    pytest tests/
+    ```
 
 <a id="s5-other_documentations"></a>
 <a id="5-other_documentations"></a>
@@ -205,7 +210,9 @@ Always code with tests in mind. Folder structure:
 ## 7 Future Improvements
 * Use `loggers` instead of `print` statements.
 * Create better `UI`
-* Use better dependency management, e.g. `poetry`
+* Use better dependency management, e.g. `poetry`.
+  * Add hashes and lock to library versions.
+  * Initially added hashes, but I encountered compatibility issue across `OS`. (e.g. works on my Windows but had issues with linux. Hence, reverted that for now to avoid complications which out of scope.)
 * Integrate `CI/CD` related badges, e.g. `build passing` and real-time `coverage`
 
 <a id="s8-maintainer"></a>
