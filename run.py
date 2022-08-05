@@ -90,6 +90,10 @@ class RobotConsoleRunner:
             match = PATTERN.match(user_command.rstrip("\n"))
             if match is None:
                 # Ignore invalid user inputs
+                print(
+                    "Invalid command. Please refer "
+                    "to README for complete syntax of commands."
+                )
                 continue
 
             command = match.group("command").lower()

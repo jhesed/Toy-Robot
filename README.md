@@ -85,11 +85,27 @@ For more details, refer to [Problem Details](docs/md/problem_details.md)
 <a id="usage"></a>
 ## 3 Usage
 
-
 ### 3.1 Via `Interactive console`
 
 #### Command:
     python run.py
+
+#### Recognized Commands by the robot (case insensitive):
+```
+PLACE X,Y,F
+MOVE
+LEFT
+RIGHT
+REPORT
+```
+
+#### Robot Character Legend:
+```
+N - When the bot is currently facing NORTH
+E - ...EAST
+S - ...SOUTH
+W - ...WEST
+```
 
 #### Example Outputs:
   * **Case: Square world / table**
