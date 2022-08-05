@@ -52,7 +52,7 @@ class Robot:
             * For the last element WEST->NORTH, modulo was used to
             return to the first index.
 
-        # TODO: Future improvement: Move out index computation to avoid O(n)
+        TODO: Future improvement: Move out index computation to avoid O(n)
         """
         self.direction = DIRECTIONS[
             (DIRECTIONS.index(self.direction) + 1) % len(DIRECTIONS)
