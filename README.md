@@ -10,8 +10,8 @@
 - [2 Installation](#s2-installation)
   * Pre-requisites
 - [3 Usage](#s3-usage)
-  * [Via `Interactive console`](s3.1-via_interactive_console)
-  * [Via `pytest` and `txt` files](s3.2-via_pytest)
+  * Via `Interactive console`
+  * Via `pytest` and `txt` files
 - [4 Tests](#s4-tests)
   * [Integration tests](s4.1-integration_tests)
   * [Unit tests](s4.2-unit_tests)
@@ -86,10 +86,6 @@ For more details, refer to [Problem Details](docs/md/problem_details.md)
 ## 3 Usage
 
 
-<a id="s3.1-via_interactive_console"></a>
-<a id="31-via_interactive_console"></a>
-
-<a id="via_interactive_console"></a>
 ### 3.1 Via `Interactive console`
 
 #### Command:
@@ -101,10 +97,6 @@ For more details, refer to [Problem Details](docs/md/problem_details.md)
   * **Case: Rectangular world / table**
     * ![Square Example](docs/assets/usage_example_rectangle.PNG)
 
-<a id="s3.2-via_pytest"></a>
-<a id="32-via_pytest"></a>
-
-<a id="via_pytest"></a>
 ### 3.2 Via `pytest` and `txt` files.
    1. Place your test scenarios under `tests/test_integration/data`
       * Be sure to follow the correct formatting.
