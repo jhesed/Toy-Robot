@@ -18,20 +18,20 @@ class Coordinate:
         """Overrides `>=` operator to make comparison between Coordinate
         objects simpler.
 
-        ..Example Usage: Coordinate(x, y) >= Coordinate(v, x)
+        Example Usage: Coordinate(x, y) >= Coordinate(v, x)
         """
         return True if self.x >= other.x and self.y >= other.y else False
 
     def __le__(self, other) -> bool:
-        """..Example Usage: Coordinate(x, y) <= Coordinate(v, x)"""
+        """Example Usage: Coordinate(x, y) <= Coordinate(v, x)"""
         return True if self.x <= other.x and self.y <= other.y else False
 
     def __gt__(self, other) -> bool:
-        """..Example Usage: Coordinate(x, y) > Coordinate(v, x)"""
+        """Example Usage: Coordinate(x, y) > Coordinate(v, x)"""
         return True if self.x > other.x and self.y > other.y else False
 
     def __lt__(self, other) -> bool:
-        """..Example Usage: Coordinate(x, y) < Coordinate(v, x)"""
+        """Example Usage: Coordinate(x, y) < Coordinate(v, x)"""
         return True if self.x < other.x and self.y < other.y else False
 
     def __eq__(self, other) -> bool:

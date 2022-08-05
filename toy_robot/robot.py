@@ -13,7 +13,8 @@ class Robot:
         """
         :param direction: Direction where the bot is currently
         facing, e.g. in (NORTH, SOUTH, EAST, WEST)
-        :param world: The bot's world, e.g. a table, a 2D plane, etc.
+        :param world: The world where the bot resides,
+        e.g. a table, a 2D plane, etc.
         :param location: Current location of the bot in the `world`
         """
         self.world = world
@@ -35,7 +36,6 @@ class Robot:
         self.location = self.location + MOVEMENT[self.direction]
         return self.location
 
-    # TODO: Future improvement: Move out index computation to avoid O(n)
     def right(self):
         """Rotates bot to right.
 
@@ -51,6 +51,8 @@ class Robot:
             Example, NORTH-> LEFT
             * For the last element WEST->NORTH, modulo was used to
             return to the first index.
+
+        # TODO: Future improvement: Move out index computation to avoid O(n)
         """
         self.direction = DIRECTIONS[
             (DIRECTIONS.index(self.direction) + 1) % len(DIRECTIONS)

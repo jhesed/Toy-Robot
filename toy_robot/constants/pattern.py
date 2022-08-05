@@ -2,8 +2,8 @@
 
 * **LEFT**: Rotate robot to the left
 * **RIGHT**: Rotate robot to the right
-* **MOVE**: Move bot 1 coordinate based on it's current direction
-* **REPORT**: Log current bot's coordinate
+* **MOVE**: Move bot 1 coordinate based on its current direction
+* **REPORT**: Log current coordinate of bot
 * **PLACE**: Place bot in the world based on the coordinate indicated
 """
 import re

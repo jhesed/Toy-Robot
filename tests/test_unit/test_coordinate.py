@@ -48,7 +48,7 @@ def test_invalid_xy_values(
         pytest.fail("Invalid x / y value should raise ValueError")
 
 
-def test_comparison():
+def test_comparison_operators():
     """Asserts comparison between coordinates."""
     assert Coordinate(x=1, y=1) >= Coordinate(x=1, y=0)
     assert Coordinate(x=2, y=1) > Coordinate(x=1, y=0)

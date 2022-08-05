@@ -5,6 +5,8 @@ from toy_robot.robot import Robot
 
 
 class RobotConsoleRunner:
+    """Exposes the toy robot functionality in a simple UI."""
+
     def __init__(self, world_width: int, world_height: int):
         self.world_width = world_width
         self.world_height = world_height
@@ -94,12 +96,12 @@ def run() -> None:
                 except (ValueError, AttributeError):
                     print(
                         "Invalid command. "
-                        "Ensure that bot is placed in world."
+                        "Ensure that the bot is placed in world."
                     )
                 else:
                     runner.update_world()
             else:
-                print("Invalid command.")
+                print(f"Invalid command `{command}`.")
 
 
 if __name__ == "__main__":

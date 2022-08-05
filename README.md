@@ -31,7 +31,7 @@
 <a id="problem"></a>
 ## 1 Problem
 ### Summary
-The application is a simulation of a toy robot moving on a square table top, of dimensions 5 units x 5 units. There are no
+The application is a simulation of a toy robot moving on a square table-top, of dimensions 5 units x 5 units. There are no
 other obstructions on the table surface. The robot is free to roam around the surface of the table, but must be prevented
 from falling to destruction. Any movement that would result in the robot falling from the table must be prevented,
 however further valid movement commands must still be allowed.
@@ -69,11 +69,11 @@ For more details, refer to [Problem Details](docs/md/problem_details.md)
   * **Windows** (via _pycharm IDE_) [Guide](https://medium.com/@dev.jhesed/how-to-install-and-setup-pycharm-and-venv-in-windows-10-d4af56399b00)
 
 ### 2.2 Installation
-* The interactive console application doesn't need a third party to run. Having `python3.10` version should be enough.
+* The interactive console application doesn't require a third party library to run. Having `python3.10` version should be enough.
 * However, if you want to run the `tests`, or add input files or scenarios, or contribute to the source code, you may start with the following steps:
 
 1. Activate `virtualenv`
-   * Example (**linux**): `source ~/venv/<path>/bin/activate`
+   * Example (**linux**): `source <path>/venv/bin/activate`
 2. If you'll play around with `pytest`, install `requirements/dev.txt`. Otherwise, the project itself doesn't require additional third party library.
    * ```
      pip install -r requirements/dev.txt
@@ -198,13 +198,14 @@ Always code with tests in mind. Folder structure:
 * Use `loggers` instead of `print` statements.
 * Create better `UI`
 * Use better dependency management, e.g. `poetry`
+* Integrate `CI/CD` related badges, e.g. `build passing` and real-time `coverage`
 
 <a id="s8-maintainer"></a>
 <a id="8-maintainer"></a>
 
 <a id="maintainer"></a>
 ## 8 Maintainer
-- jhesed: _dev.jhesed@gmail.com_
+- Jhesed: _dev.jhesed@gmail.com_
 
 <a id="s9-inspiration"></a>
 <a id="9-inspiration"></a>

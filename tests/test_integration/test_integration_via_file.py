@@ -60,7 +60,7 @@ def run_via_file(file_location: str) -> dict:
 
 def test_integration_via_file():
     """Retrieves all files in the data/ directory and compares `Output` with
-    the currently result of the bot."""
+    the current result of the bot."""
     for file_name in os.listdir(DATA_PATH):
         print(f"{'-'*20} Processing file {file_name}")
         result = run_via_file(file_location=f"{DATA_PATH}/{file_name}")
