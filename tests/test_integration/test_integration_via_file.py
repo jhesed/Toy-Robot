@@ -5,12 +5,15 @@ the `Output` text with the report from the bot
 """
 import os
 
+import pytest
+
 from tests.test_unit.test_robot import WORLD
 from toy_robot.constants.pattern import PATTERN
 from toy_robot.coordinate import Coordinate
 from toy_robot.robot import Robot
 
 DATA_PATH = f"{os.path.dirname(__file__)}/data"
+FILE_NAMES = os.listdir(DATA_PATH)
 
 
 def run_via_file(file_location: str) -> dict:
@@ -58,11 +61,12 @@ def run_via_file(file_location: str) -> dict:
     return reports
 
 
-def test_integration_via_file():
+@pytest.mark.parametrize(
+    argnames=("file_name",),
+    argvalues=((file_name,) for file_name in FILE_NAMES),
+)
+def test_integration_via_file(file_name: str):
     """Retrieves all files in the data/ directory and compares `Output` with
     the current result of the bot."""
-    for file_name in os.listdir(DATA_PATH):
-        print(f"{'-'*20} Processing file {file_name}")
-        result = run_via_file(file_location=f"{DATA_PATH}/{file_name}")
-        assert result["actual_output"] == result["expected_output"]
-        print(f"Test case passed. {result}")
+    result = run_via_file(file_location=f"{DATA_PATH}/{file_name}")
+    assert result["actual_output"] == result["expected_output"]
