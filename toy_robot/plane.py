@@ -12,13 +12,13 @@ class Plane:
         self.height = height
 
         self.southwest_corner = Coordinate(x=0, y=0)
-        self.northeast_corner = Coordinate(x=self.width, y=self.height)
+        self.northeast_corner = Coordinate(x=self.width - 1, y=self.height - 1)
 
     def is_inside_plane(self, coordinate: Coordinate) -> bool:
         """Checks if provided coordinate still resides on the plane."""
         return (
             True
-            if self.southwest_corner <= coordinate < self.northeast_corner
+            if self.southwest_corner <= coordinate <= self.northeast_corner
             else False
         )
 

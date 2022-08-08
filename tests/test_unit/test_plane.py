@@ -17,14 +17,14 @@ from toy_robot.plane import Plane
             5,
             5,
             Coordinate(x=0, y=0),
-            Coordinate(x=5, y=5),
+            Coordinate(x=4, y=4),
         ),
         # Case: rectangle
         (
             5,
             2,
             Coordinate(x=0, y=0),
-            Coordinate(x=2, y=5),
+            Coordinate(x=1, y=4),
         ),
     ),
 )
